@@ -27,6 +27,8 @@
 #include "../../core/debug/debug.h"
 #include "../../core/debug/disasm.h"
 
+#include "lua/sol.hpp"
+
 #ifdef PNG_WRITE_APNG_SUPPORTED
 class RecordingThread : public QThread {
     Q_OBJECT
@@ -455,6 +457,12 @@ private:
     void ipcChangeID();
     void ipcHandleCommandlineReceive(QDataStream& stream);
 
+    // Lua
+    void initLuaThings();
+    void loadLuaScript();
+    void saveLuaScript();
+    void runLuaScript();
+
 #ifdef _WIN32
     // Win32 Console Toggle
     void toggleConsole();
@@ -525,6 +533,8 @@ private:
     QMenu *debugMenu;
 
     KeyHistory *keyHistoryWindow = Q_NULLPTR;
+
+    sol::state lua;
 
     ipc *com;
 
