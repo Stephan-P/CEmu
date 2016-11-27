@@ -311,6 +311,7 @@ void MainWindow::setFont(int fontSize) {
     QFont monospace = QFontDatabase::systemFont(QFontDatabase::FixedFont);
 
     monospace.setPointSize(fontSize);
+    ui->luaScriptEditor->setFont(monospace);
     ui->console->setFont(monospace);
     ui->disassemblyView->setFont(monospace);
 

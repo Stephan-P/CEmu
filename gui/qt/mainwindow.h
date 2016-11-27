@@ -21,6 +21,7 @@
 #include "keyhistory.h"
 #include "keypad/qtkeypadbridge.h"
 #include "qhexedit/qhexedit.h"
+#include "luaeditor.h"
 #include "png.h"
 
 #include "../../core/cpu.h"
