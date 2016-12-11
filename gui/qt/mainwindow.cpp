@@ -1481,6 +1481,12 @@ void MainWindow::selectAllVars() {
 // Autotester things
 // ------------------------------------------------
 
+void MainWindow::pressKeyFromName(const std::string& key)
+{
+    autotester::pressKeyFromName(key);
+    autotester::stepCallback();
+}
+
 void MainWindow::dispAutotesterError(int errCode) {
     QString errMsg;
     switch (errCode) {

@@ -394,6 +394,7 @@ private:
     void setRecentSave(bool state);
 
     // Autotester
+    void pressKeyFromName(const std::string&);
     void dispAutotesterError(int errCode);
     int openJSONConfig(const QString& jsonPath);
     void prepareAndOpenJSONConfig();
