@@ -40,7 +40,7 @@
     </message>
     <message>
         <source>Clear History</source>
-        <translation type="vanished">Geschiedenis wissen</translation>
+        <translation type="vanished">Wissen</translation>
     </message>
     <message>
         <source>Size</source>
@@ -56,7 +56,7 @@
     <message>
         <location filename="../keyhistorywidget.cpp" line="10"/>
         <source>Clear History</source>
-        <translation>Geschiedenis wissen</translation>
+        <translation>Wissen</translation>
     </message>
     <message>
         <location filename="../keyhistorywidget.cpp" line="11"/>
